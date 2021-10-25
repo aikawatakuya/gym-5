@@ -1,0 +1,230 @@
+/******************************************************************
+
+Stylesheet: 600px以上のモニタで適用
+
+******************************************************************/
+
+.c-container {
+  padding: 0 10vw;
+}
+
+.c-txt-lr {
+  font-size: 1.4rem;
+}
+
+.reserve-btn-js {
+  display: none;
+}
+
+//.header
+.header {
+  & .mobile-container {
+    height: 74px;
+  }
+
+  & .logo__img {
+    margin-left: 40px;
+  }
+
+  & .logo {
+    height: 70px;
+    width: 120px;
+  }
+
+  & .mobile-button {
+    top: 25px;
+    right: 40px;
+  }
+
+  & .sp-navbtn {
+    display: none;
+  }
+}
+
+//.p-firstview 
+.p-firstview {
+  .swiper-container {
+    height: 100vh;
+  }
+}
+
+//.p-concept
+.p-concept {
+  padding: 10vw 0;
+}
+
+//.p-price
+.p-price {
+  padding: 20vw 0 15vw 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block {
+    width: 46%;
+  }
+
+  &__img-wrap {
+    padding: 15vw 0;
+  }
+
+  &__img {
+    width: 50%;
+  }
+
+  & .right {
+    top: 5vw;
+  }
+}
+
+//.p-recruite
+.p-recruite {
+  padding: 5vw 0;
+}
+
+//.p-access
+.p-access {
+  padding: 10vw 0;
+
+  &__img {
+    padding-top: 10vw;
+  }
+
+  & .simpleParallax {
+    text-align: center;
+
+    & img {
+      width: 80%;
+    }
+  }
+}
+
+//.p-footer
+.p-footer {
+  & .c-logo {
+    & img {
+      width: 20%;
+    }
+  }
+}
+
+//* * * * * * recruit-page * * * * * * *
+.c-recruite {
+  &__title {
+    & span {
+      padding-top: 3vw;
+      font-size: 2rem;
+    }
+
+    & p {
+      font-size: 0.8rem;
+    }
+  }
+
+  &__list {
+    margin-top: 5vw;
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+  }
+
+  &__text {
+    font-size: 0.8rem;
+  }
+}
+
+//* * * * * * staff-page * * * * * * *
+.c-staff {
+  &__img {
+    height: 240px;
+  }
+
+  &__title {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  &__item {
+    margin-bottom: 40px;
+  }
+
+  &__name {
+    margin: 20px;
+    font-size: 1.2rem;
+  }
+
+  &__desc {
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+  }
+
+  .sns-link {
+    & span {
+      font-size: 0.9rem;
+
+      &::before {
+        height: 1.1rem;
+        width: 1.1rem;
+        top: 0px;
+        right: 10px;
+      }
+    }
+  }
+}
+
+//* * * * * * news-sl-page * * * * * * *
+.c-news-sl {
+
+  & .c-container {
+    padding: 5vw 10vw;
+  }
+
+  &__date {
+    font-size: 1.2rem;
+  }
+
+  &__tit {
+    & p {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__contents {
+    padding: 4vw 0;
+
+    & p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+//* * * * * * news-page * * * * * * *
+.c-news {
+  &__title {
+    & span {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__list {
+    & p {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__link {
+    padding: 2.5vw;
+  }
+
+  &__date {
+    font-size: 1.2rem;
+  }
+
+  & .page-numbers {
+    margin: 8vw 0 4vw 0;
+  }
+}

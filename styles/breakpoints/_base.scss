@@ -1,0 +1,914 @@
+// 設定
+body {
+  margin: 0;
+  color: $cBlack;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Noto Serif JP", serif;
+
+  &.hidden {
+    overflow: hidden;
+  }
+}
+
+.superwrapper {
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $cBlack;
+}
+
+dd {
+  margin-bottom: 0;
+}
+
+.c-container {
+  padding: 0 7vw;
+}
+
+.c-txt-lr {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  line-height: 2;
+  color: $cSubBlack;
+  margin-top: 0;
+  font-weight: 100;
+}
+
+.c-txt-md {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: $cSubBlack;
+  margin: 0;
+}
+
+.c-txt-sm {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  line-height: 2;
+  color: $cSubBlack;
+}
+
+.c-txt-xs {
+  font-size: 0.5rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: $cSubBlack;
+}
+
+.c-title {
+  position: relative;
+  text-transform: uppercase;
+  @extend .mb-md;
+
+  & .en {
+    display: block;
+    font-size: 30px;
+    letter-spacing: 4px;
+  }
+
+  & .ja {
+    position: relative;
+    top: -0.3rem;
+    font-size: 14px;
+    color: $cSubBlack;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    background-color: $cBlue;
+  }
+}
+
+.view-more {
+  margin-top: 10vw;
+  text-align: right;
+
+  & span {
+    display: inline-block;
+    letter-spacing: 3px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(110, 110, 110);
+  }
+}
+
+.icon-tel {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url(/images/common/icon-tel.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 19px;
+    width: 19px;
+  }
+}
+
+.icon-map {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url(/images/common/icon-map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 19px;
+    width: 19px;
+  }
+}
+
+.icon-net {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url(/images/common/icon-calendar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 19px;
+    width: 19px;
+  }
+}
+
+.icon-insta {
+  position: relative;
+  padding-left: 10vw;
+  color: $cBlack;
+  border-bottom: 1px solid $cGray;
+  padding-bottom: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/images/common/icon-insta-gr.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 19px;
+    width: 19px;
+  }
+}
+
+.insta-link {
+  text-align: right;
+  margin-bottom: 10px;
+
+  & span {
+    position: relative;
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 15px;
+    border-bottom: 1px solid $cSubBlack;
+    font-size: 14px;
+    color: $cSubBlack;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+      height: 18px;
+      width: 18px;
+      background-image: url(../images/common/icon-insta-gr.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      height: 8px;
+      width: 8px;
+      background-image: url(../images/common/arrow.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.c-topview {
+  @media (min-width: 600px) {
+    height: 30vh;
+  }
+
+  @media (min-width: 1200px) {
+    height: 30vh;
+  }
+}
+
+//ファーストビューセクション
+.p-firstview {
+  position: relative;
+
+  & .swiper-container {
+    height: 91vh;
+
+    @media (max-width: 1199px) {
+      .view-pc {
+        display: none;
+      }
+    }
+  }
+}
+
+//コンセプトセクション
+.p-concept {
+  background-color: rgb(250, 250, 250);
+  padding: 20vw 0 10vw 0;
+
+  & .c-txt-md {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    padding-bottom: 10vw;
+  }
+}
+
+//.p-instagram
+.p-instagram {
+  &__img {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    & a {
+      width: 33%;
+    }
+  }
+
+  @media (min-width: 960px) {
+    &__img {
+      justify-content: space-around;
+      margin-bottom: 60px;
+
+      & a {
+        width: 25%;
+      }
+    }
+
+    .insta-link {
+      text-align: center;
+
+      span {
+        font-size: 34px;
+        padding-left: 50px;
+        padding-right: 30px;
+
+        &::before {
+          height: 34px;
+          width: 34px;
+        }
+
+        &::after {
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+  }
+}
+
+//プライスセクション
+.p-price {
+  padding: 20vw 0 25vw 0;
+
+  &__title {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  &__desc {
+    font-size: 12px;
+
+    &__p {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    padding-top: 15vw;
+    letter-spacing: 1px;
+    max-width: 100%;
+
+    & dl {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 23px;
+      width: 100%;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    & dd,
+    dt {
+      font-size: 0.8em;
+      margin: 0;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+
+    & span {
+      font-size: 0.6em;
+    }
+  }
+
+  &__section {
+    margin-bottom: 40px;
+  }
+
+  &__img-wrap {
+    position: relative;
+    padding: 20vw 0 30vw 0;
+  }
+
+  &__img {
+    width: 60%;
+
+    & img {
+      box-shadow: 15px 25px 45px rgb(206, 206, 206);
+    }
+
+    &.left {
+      margin-top: 45vw;
+    }
+  }
+
+  & .right {
+    position: absolute;
+    top: 18vw;
+    right: 0;
+  }
+
+  & li {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: rgb(100, 98, 98);
+  }
+}
+
+//リクルートセクション
+.p-recruite {
+  background-color: rgb(245, 245, 245);
+  padding: 35vw 0 20vw 0;
+
+  &__title {
+    text-align: left;
+    margin-bottom: 10vw;
+  }
+
+  &__subtitle {
+    font-size: 0.9em;
+    padding-bottom: 10px;
+  }
+}
+
+//アクセスセクション
+.p-access {
+  padding: 20vw 0;
+
+  &__title {
+    padding-bottom: 5vw;
+  }
+
+  &__item {
+    margin-bottom: 5vw;
+
+    & p {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__g-map {
+    text-align: right;
+
+    & span {
+      position: relative;
+      display: inline-block;
+      padding: 0 0 1vw 18px;
+      border-bottom: 1px solid rgb(163, 163, 163);
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 0;
+        display: inline-block;
+        background-image: url(/images/common/icon-map.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 18px;
+        width: 18px;
+      }
+    }
+  }
+
+  &__img {
+    padding-top: 20vw;
+  }
+}
+
+//#news
+.p-news {
+  position: relative;
+  padding: 10vw 0;
+
+  &__tit {
+    margin-bottom: 10vw;
+
+    & p {
+      margin-bottom: -20px;
+      font-weight: 100;
+      letter-spacing: 5px;
+    }
+  }
+
+  &__txt {
+    margin: 5vw 0;
+  }
+
+  &__link {
+    display: block;
+    padding: 5vw 0;
+    font-size: 0.8rem;
+
+    & p {
+      margin-top: 2vw;
+    }
+
+    & span {
+      padding: 3px;
+      border-radius: 5%;
+      background-color: rgb(247, 247, 247);
+    }
+  }
+
+  &__item {
+    border-bottom: 1px solid rgb(235, 235, 235);
+
+    &:first-child {
+      border-top: 1px solid rgb(235, 235, 235);
+    }
+  }
+
+  & .view-more {
+    padding-right: 0;
+    text-align: right;
+    letter-spacing: 2px;
+
+    & span {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+//.p-footer
+.p-footer {
+  padding: 40px 0;
+  border-top: 1px solid #ededed;
+
+  &__logo {
+    @extend .mb-sm;
+
+    & img {
+      width: 25%;
+    }
+  }
+
+  &__nav {
+    margin: auto;
+    display: block;
+
+    & ul {
+      display: inline-block;
+    }
+
+    & li {
+      margin-bottom: 15px;
+      text-align: left;
+
+      & span {
+        position: relative;
+        display: block;
+        padding-left: 20px;
+
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          margin: auto;
+          content: "";
+          height: 10px;
+          width: 10px;
+          background-image: url(/images/common/arrow.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+
+      & .c-txt-sm {
+        font-size: 12px;
+        color: $cBlack;
+      }
+    }
+  }
+
+  &__address {
+    text-align: center;
+    @extend .mb-sm;
+
+    & .address {
+      margin-bottom: 10px;
+    }
+
+    & a {
+      & span {
+        color: $cBlack;
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}
+
+//* * * * * * 特徴 * * * * * * *
+.c-about {
+  .c-features {
+    @extend .mb-lr;
+  }
+
+  .c-points {
+    @extend .mb-lr;
+
+    & .tit {
+      text-align: center;
+      font-size: 20px;
+      @extend .mb-sm;
+
+      & .en {
+        font-size: 12px;
+        color: $cBlue;
+      }
+    }
+
+    &__img {
+      @extend .mb-sm;
+    }
+
+    &__item {
+      @extend .mb-md;
+    }
+
+    &__desc {
+      @extend .c-container;
+
+      .item-tit {
+        font-size: 18px;
+      }
+
+      .num {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-size: 28px;
+        color: $cBlue;
+        border-bottom: 2px solid $cBlue;
+
+        &-wrap {
+          text-align: center;
+          @extend .mb-sm;
+        }
+      }
+    }
+  }
+
+  .more-btn {
+    text-align: center;
+    display: block;
+
+    &__link {
+      width: auto;
+    }
+  }
+}
+
+//* * * * * * トレーナー * * * * * * *
+.c-trainers {
+  .c-features {
+    @extend .mb-md;
+  }
+
+  .c-staff {
+    @extend .mb-md;
+
+    &__item {
+      @extend .mb-md;
+
+      & .director {
+        text-align: center;
+        font-size: 22px;
+        letter-spacing: 4px;
+        @extend .mb-sm;
+
+        & .en {
+          font-size: 12px;
+          color: $cBlue;
+        }
+      }
+    }
+
+    &__img {
+      @extend .mb-sm;
+    }
+
+    &__name {
+      & .en {
+        font-size: 14px;
+        letter-spacing: 3px;
+      }
+
+      & .ja {
+        font-size: 24px;
+        letter-spacing: 3px;
+      }
+    }
+
+    &__text {
+      @extend .mb-sm;
+    }
+
+    &__ls {
+      @extend .mb-sm;
+    }
+  }
+
+  .more-btn {
+    text-align: center;
+    display: block;
+
+    &__link {
+      width: auto;
+    }
+  }
+}
+//* * * * * * * * * recruite-page * * * * * * * * * *
+.c-recruite {
+  padding: 0 0 10vw 0;
+  letter-spacing: 3px;
+  line-height: 2;
+
+  &__title {
+    & span {
+      padding-top: 4vw;
+      text-align: center;
+      font-weight: 100;
+      font-size: 1.8rem;
+      display: block;
+      color: $cSubBlack;
+    }
+
+    & p {
+      margin-top: 4vw;
+      font-size: 0.5rem;
+      line-height: 2;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+  }
+
+  &__list {
+    margin-top: 10vw;
+    font-size: 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    margin-top: 20px;
+    text-align: right;
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+
+    & span {
+      position: relative;
+      padding-left: 20px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgb(148, 148, 148);
+
+      &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 15px;
+        width: 15px;
+        background-image: url(/images/common/icon-tel.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__name {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  &__desc {
+    font-size: 0.5rem;
+  }
+}
+
+//* * * * * * news-page * * * * * * *
+.c-news {
+  padding: 6vw 0 5vw 0;
+  letter-spacing: 3px;
+
+  &__link {
+    display: block;
+    padding: 5vw 0;
+
+    & p {
+      margin-top: 2vw;
+      font-size: 0.8rem;
+    }
+  }
+
+  &__date {
+    color: $cSubBlack;
+  }
+
+  &__item {
+    border-bottom: 1px solid rgb(235, 235, 235);
+
+    &:first-child {
+      border-top: 1px solid rgb(235, 235, 235);
+    }
+  }
+
+  .page-numbers {
+    margin: 12vw 0;
+  }
+
+  .page-numbers:not(.next):not(.prev) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $cBlack;
+
+    & .current {
+      border: 1px solid rgba(0, 0, 0, 0);
+      background: #dffde2 !important;
+    }
+
+    & .page-numbers:not(.next):not(.prev) {
+      width: 8vw;
+      height: 8vw;
+      border-radius: 100%;
+      border: 1px solid #c4ccd1;
+      background: #fff;
+      margin: 0 1.3vw;
+    }
+
+    & .next {
+      position: relative;
+      padding-right: 22px;
+      top: 0;
+
+      &::after {
+        transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+        content: "";
+        position: absolute;
+        right: 0;
+        background-image: url(/images/common/arrow.png);
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        margin-left: 8px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      & .next {
+        display: none;
+      }
+    }
+
+    @media (min-width: 768px) {
+      & .page-numbers:not(.next):not(.prev) {
+        width: 40px;
+        height: 40px;
+      }
+
+      & .next {
+        top: 0;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  &__contents {
+    line-height: 2;
+    font-size: 0.8rem;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 6vw;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+
+  .c-news__block {
+    padding: 8vw 0;
+  }
+}
+
+//* * * * * * news-single-page * * * * * * *
+.c-news-sl {
+  & .c-container {
+    padding: 10vw 5vw;
+  }
+
+  &__date {
+    color: $cGray;
+  }
+
+  &__contents {
+    padding: 12vw 0;
+    line-height: 2.5;
+
+    & p {
+      font-size: 0.8rem;
+    }
+  }
+
+  &__link {
+    text-align: right;
+    font-size: 1rem;
+    letter-spacing: 2px;
+
+    & a {
+      display: inline-block;
+      padding-bottom: 3px;
+      border-bottom: 1px solid rgb(114, 114, 114);
+    }
+  }
+}

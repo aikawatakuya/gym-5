@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>タイトル</title>
+	<link rel="stylesheet" href="layerBoard.css">
+	<style>
+		body{
+			width:100%;
+			max-width:900px;
+			margin: 0 auto;
+			min-height: 100vh;
+		}
+		.content {
+			margin: 2em;
+		}
+	</style>
+</head>
+<body>
+
+<div id="layer_board_area">
+	<div class="layer_board_bg"></div>
+	<section class="layer_board">
+		<h2 class="layer_borad_title">TITLE</h2>
+		<div class="layer_borad_content">
+			<p>モーダルウィンドウ部分。</p>
+			<p>背景の黒い部分か右上バツボタンまたは「閉じる」ボタンを押すとモーダルウィンドウを閉じます。</p>
+			<p>jquery-modalLayerBoard.jsの実行コードを「limitMin:1」に設定しているので、1分後にモーダルウィンドウが再表示されます。一度閉じたあと再表示しない場合は「limitMin:0」に設定します。</p>
+			<p>ウィンドウ部分をスクロール、背景（メインコンテンツ部分）を固定するように作成しています。</p>
+			<p>・</p>
+			<p>・</p>
+			<p>・</p>
+			<p>・</p>
+			<p>・</p>
+			<p>・</p>
+			<p>・</p>
+			<p>・</p>
+			<p>・</p>
+			<p>・</p>
+			<p>・</p>
+			<p>・</p>
+			<p>・</p>
+			<p>・</p>
+			<p>・</p>
+			<p>・</p>
+			<p>・</p>
+			<p>・</p>
+			<p>・</p>
+		</div>
+		<a class="mdl_btn_close square_btn" href="#">閉じる</a>
+		<div class="mdl_btn_close circle_btn"></div>
+	</section>
+</div><!-- layer_board_area -->
+
+<section class="content">
+	<h1>Modal Window Sample</h1>
+	<p>これはサンプルページです。</p>
+</section>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- jquery.cookie.js -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<!-- jquery-modalLayerBoard.js -->
+<script type="text/javascript" src="jquery-modalLayerBoard.js"></script>
+<!-- jquery-modalLayerBoard.jsを実行するコード -->
+<script type="text/javascript">
+	$(function(){
+		$('#layer_board_area').layerBoard({
+			delayTime: 200,		//表示までの待ち時間
+			fadeTime : 500,		//表示開始から表示しきるまでの時間
+			alpha : 0.8,		//背景レイヤーの透明度
+			limitMin : 1,		//何分経過後に再度表示するか/分（0で再表示なし）
+			easing: 'linear',		//イージング
+			limitCookie : 0	,	//cookie保存期間/日（0で開くたび毎回表示される）
+			countCookie : 1000	//何回目のアクセスまで適用するか(cookie保存期間でリセット)
+		});
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+/******************************************************************
+
+Stylesheet: 1200px以上のモニタで適用
+
+******************************************************************/
+
+//.p-first-view
+.p-firstview {
+  & .swiper-container {
+    .view-sp {
+      display: none;
+    }
+  }
+}
+
+
+//.p-price 
+.p-price {
+  padding-bottom: 0;
+
+  &__img-wrap {
+    padding: 10vw 0;
+  }
+}
+
+//.p-news 
+.p-news {
+  padding: 0 0 10vw 0;
+
+  &__tit {
+    margin-bottom: 5vw;
+  }
+
+  &__link {
+    padding: 2vw 5vw;
+  }
+
+  & .view-more {
+    margin-top: 5vw;
+  }
+}
+
+//.p-footer
+.p-footer {
+  padding: 5vw 0;
+
+  &__sns {
+    margin-bottom: 5vw;
+  }
+}
+
+//* * * * * * news-page * * * * * * *
+.c-news {
+
+  &__title {
+    margin-bottom: 5vw !important;
+  }
+
+  &__list {
+    font-size: 1.5rem;
+
+    & a {
+      padding: 2.5vw 0 2.5vw 5vw;
+    }
+  }
+}
+
+//* * * * * * news-sl-page * * * * * * *
+.c-news-sl {
+  & .c-container {
+    padding: 5vw 12vw;
+  }
+}
