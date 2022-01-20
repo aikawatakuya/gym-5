@@ -1,66 +1,83 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ジムテンプレート3 | top</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ジムテンプレート3 | top</title>
+    <link rel="stylesheet" href="styles/vendor/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="styles/vendor/animsition.min.css" />
+    <link rel="stylesheet" href="styles/vendor/swiper.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="styles/vendor/bootstrap-reboot.css" />
-  <link rel="stylesheet" href="styles/vendor/animsition.min.css" />
-  <link rel="stylesheet" href="styles/vendor/swiper.min.css" />
-  <link rel="stylesheet" href="styles/style.css" />
-</head>
-
-<body class="animsition">
-  <div class="superwrapper">
-    <header id="header" class="header">
-      <div class="mobile-container">
-        <div class="logo__img">
-          <a class="animsition-link" href="/">
-            <div class="logo inview"></div>
-          </a>
+  <body class="animsition">
+    <div class="superwrapper">
+      <header id="header" class="header">
+        <div class="mobile-container">
+          <div class="logo__img">
+            <a class="animsition-link" href="/">
+              <div class="logo inview"></div>
+            </a>
+          </div>
+          <div class="mobile-button">
+            <button class="mobile-menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
-        <div class="mobile-button">
-          <button class="mobile-menu__btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+        <!-- /.mobile-container -->
+        <div class="pc-container">
+          <div class="logo__img">
+            <a class="animsition-link" href="/">
+              <div class="logo inview"></div>
+            </a>
+          </div>
+          <nav class="pc-nav">
+            <ul class="pc-nav-list">
+              <li class="pc-nav-item">
+                <a class="pc-nav-link animsition-link" href="/"
+                  ><span>ホーム</span></a
+                >
+              </li>
+              <li class="pc-nav-item">
+                <a class="pc-nav-link animsition-link" href="/about/about.html"
+                  ><span>RIVROUNDについて</span></a
+                >
+              </li>
+              <li class="pc-nav-item">
+                <a
+                  class="pc-nav-link animsition-link"
+                  href="/method/method.html"
+                  ><span>トレーニングメソッド</span></a
+                >
+              </li>
+              <li class="pc-nav-item">
+                <a
+                  class="pc-nav-link animsition-link"
+                  href="/trainers/trainers.html"
+                  ><span>トレーナー紹介</span></a
+                >
+              </li>
+              <li class="pc-nav-item">
+                <a
+                  class="pc-nav-link animsition-link"
+                  href="/recruite/recruite.html"
+                  ><span>採用情報</span></a
+                >
+              </li>
+              <li class="pc-nav-item">
+                <a class="pc-nav-link animsition-link" href="/news/news.html"
+                  ><span>お知らせ</span></a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
-      </div>
-      <!-- /.mobile-container -->
-      <div class="pc-container">
-        <div class="logo__img">
-          <a class="animsition-link" href="/">
-            <div class="logo inview"></div>
-          </a>
-        </div>
-        <nav class="pc-nav">
-          <ul class="pc-nav-list">
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/"><span>ホーム</span></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/about/about.html"><span>RIVROUNDについて</span></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/method/method.html"><span>トレーニングメソッド</span></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/trainers/trainers.html"><span>トレーナー紹介</span></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/recruite/recruite.html"><span>採用情報</span></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>お知らせ</span></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- /.pc-container -->
-      <!-- <div class="reserve-btn-js">
+        <!-- /.pc-container -->
+        <!-- <div class="reserve-btn-js">
         <div class="reserve-btn-js__inner">
           <div class="reserve-btn-js__01">
             <span>ご</span>
@@ -77,402 +94,454 @@
           </div>
         </div>
       </div> -->
-      <!-- /.reserve-btn -->
-    </header>
-    <!-- /.header -->
-    <!-- .p-firstview -->
-    <div class="p-firstview">
-      <div class="hero">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img class="view-sp" src="images/home/top_1@sp.jpg" />
-              <img class="view-pc" src="images/home/top_1@pc.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img class="view-sp" src="images/home/top_2@sp.jpg" />
-              <img class="view-pc" src="images/home/top_2@pc.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img class="view-sp" src="images/home/top_3@sp.jpg" />
-              <img class="view-pc" src="images/home/top_3@pc.jpg" />
-            </div>
-          </div>
-        </div>
-        <div class="p-firstview__textbox clip-js1 skew">
-          <div class="p-firstview__text">
-            We Create Special with RivRound.
-          </div>
-        </div>
-        <div class="scrolldown-wrap">
-          <a class="scrolldown" href="#">Scroll</a>
-        </div>
-      </div>
-    </div>
-    <!-- .p-concept -->
-    <section id="concept" class="p-concept">
-      <div class="c-container">
-        <h2 class="p-concept__title clip-js left">
-          <p class="c-txt-lr">concept</p>
-        </h2>
-        <div class="p-concept__text appear up">
-          <p class="c-txt-md item">誰もが憧れる身体づくりを</p>
-          <p class="c-txt-sm item">
-            一瞬だけではない長い人生を
-            健康的に、そして魅力的に生き抜く本質を見据えた
-            誠実なカラダづくり。
-            美しいプロポーションは、心とカラダの健康があってこそ。
-          </p>
-          <p class="c-txt-sm item">
-            そして、一度手に入れた理想のカラダを
-            リバウンドせずに持続させること
-            このシンプルな原点と真剣に向き合うことから生まれたのが
-            RivRoundジムです。
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- .p-instagram -->
-    <section id="instagram" class="p-instagram">
-      <div class="c-container appear up">
-        <h2 class="p-concept__title clip-js left">
-          <span class="c-title">instagram</span>
-        </h2>
-        <div class="p-instagram__img item">
-          <a href="https://www.instagram.com/" class="animtion-link" target="_blank">
-            <img src="/images/home/shoulder_2.jpg" alt="" />
-          </a>
-          <a href="https://www.instagram.com/" class="animtion-link" target="_blank">
-            <img src="/images/home/dumbbell_1.jpg" alt="" />
-          </a>
-          <a href="https://www.instagram.com/" class="animtion-link" target="_blank">
-            <img src="/images/home/shoose_1.jpg" alt="" />
-          </a>
-        </div>
-        <div class="insta-link item">
-          <a href="https://www.instagram.com/shouta_oumaru/" class="insta-link-btn" target="_blank">
-            <span>follow us</span></a>
-        </div>
-      </div>
-    </section>
-    <!-- .p-trainers -->
-    <section id="trainers" class="p-trainers">
-      <div class="c-container">
-        <h2 class="p-staff__title clip-js left">
-          <p class="c-txt-lr">trainers</p>
-        </h2>
-        <div class="p-staff__block staff01 appear up">
-          <div class="p-staff__img item">
-            <img class="item" src="images/home/stomach_1.jpg" />
-          </div>
-          <div class="p-staff__wrap item">
-            <h2 class="p-staff__name">
-              <p class="c-txt-lr">利部　翔太</p>
-              <p class="c-txt-xs">SHOTA　RIBU</p>
-            </h2>
-            <div class="p-staff__desc">
-              <p class="c-txt-sm">
-                rivroundを通じて、お客様一人一人の目的、目標と真摯に向き合いながら、身体の変化、そしてフィットネスの本当の楽しさ、<br />
-                必要性を感じていただくことが私の仕事のやりがいです。
-                丁寧にご指導いたします。
-              </p>
-              <strong class="c-txt-xs">休：毎週月曜日、第1、3火曜日</strong>
+        <!-- /.reserve-btn -->
+      </header>
+      <!-- /.header -->
+      <!-- .p-firstview -->
+      <div class="p-firstview">
+        <div class="hero">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="view-sp" src="images/home/top_1@sp.jpg" />
+                <img class="view-pc" src="images/home/top_1@pc.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img class="view-sp" src="images/home/top_2@sp.jpg" />
+                <img class="view-pc" src="images/home/top_2@pc.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img class="view-sp" src="images/home/top_3@sp.jpg" />
+                <img class="view-pc" src="images/home/top_3@pc.jpg" />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="p-staff__block staff02 appear up">
-          <div class="p-staff__img item">
-            <img class="item" src="images/home/top_2@pc.jpg" />
+          <div class="p-firstview__textbox clip-js1 skew">
+            <div class="p-firstview__text">
+              We Create Special with RivRound.
+            </div>
           </div>
-          <div class="p-staff__wrap item">
-            <h2 class="p-staff__name">
-              <p class="c-txt-lr">利部　真理</p>
-              <p class="c-txt-xs">MARI　RIBU</p>
-            </h2>
-            <div class="p-staff__desc">
-              <p class="c-txt-sm">
-                我々、rivroundはまず姿勢矯正をして頂きます。反り腰など日本人特有の姿勢を矯正し、痛みの出ないカラダを作りながらトレーニングに入ります。
-                1度私達と一緒にカラダに目を向けて見ませんか？？
-              </p>
-              <strong class="c-txt-xs">休：毎週火曜日、第一第三月曜日</strong>
+          <div class="scrolldown-wrap">
+            <a class="scrolldown" href="#">Scroll</a>
+          </div>
+        </div>
+      </div>
+      <!-- .p-concept -->
+      <section id="concept" class="p-concept">
+        <div class="c-container appear right">
+          <h2 class="p-concept__title item">
+            <p class="c-txt-lr">concept</p>
+          </h2>
+          <div class="p-concept__text appear up">
+            <p class="c-txt-md item">誰もが憧れる身体づくりを</p>
+            <p class="c-txt-sm item">
+              一瞬だけではない長い人生を
+              健康的に、そして魅力的に生き抜く本質を見据えた
+              誠実なカラダづくり。
+              美しいプロポーションは、心とカラダの健康があってこそ。
+            </p>
+            <p class="c-txt-sm item">
+              そして、一度手に入れた理想のカラダを
+              リバウンドせずに持続させること
+              このシンプルな原点と真剣に向き合うことから生まれたのが
+              RivRoundジムです。
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- .p-instagram -->
+      <section id="instagram" class="p-instagram">
+        <div class="c-container appear right">
+          <h2 class="p-concept__title item">
+            <span class="c-title">instagram</span>
+          </h2>
+          <div class="p-instagram__img item">
+            <a
+              href="https://www.instagram.com/"
+              class="animtion-link"
+              target="_blank"
+            >
+              <img src="/images/home/shoulder_2.jpg" alt="" />
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              class="animtion-link"
+              target="_blank"
+            >
+              <img src="/images/home/dumbbell_1.jpg" alt="" />
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              class="animtion-link"
+              target="_blank"
+            >
+              <img src="/images/home/shoose_1.jpg" alt="" />
+            </a>
+          </div>
+          <div class="insta-link item">
+            <a
+              href="https://www.instagram.com/shouta_oumaru/"
+              class="insta-link-btn"
+              target="_blank"
+            >
+              <span>follow us</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- .p-trainers -->
+      <section id="trainers" class="p-trainers">
+        <div class="c-container appear right">
+          <h2 class="p-staff__title item">
+            <p class="c-txt-lr">trainers</p>
+          </h2>
+          <div class="p-staff__block staff01 appear up">
+            <div class="p-staff__img item">
+              <img class="item" src="images/home/stomach_1.jpg" />
+            </div>
+            <div class="p-staff__wrap item">
+              <h2 class="p-staff__name">
+                <p class="c-txt-lr">利部　翔太</p>
+                <p class="c-txt-xs">SHOTA　RIBU</p>
+              </h2>
+              <div class="p-staff__desc">
+                <p class="c-txt-sm">
+                  rivroundを通じて、お客様一人一人の目的、目標と真摯に向き合いながら、身体の変化、そしてフィットネスの本当の楽しさ、<br />
+                  必要性を感じていただくことが私の仕事のやりがいです。
+                  丁寧にご指導いたします。
+                </p>
+                <strong class="c-txt-xs">休：毎週月曜日、第1、3火曜日</strong>
+              </div>
+            </div>
+          </div>
+          <div class="p-staff__block staff02 appear up">
+            <div class="p-staff__img item">
+              <img class="item" src="images/home/top_2@pc.jpg" />
+            </div>
+            <div class="p-staff__wrap item">
+              <h2 class="p-staff__name">
+                <p class="c-txt-lr">利部　真理</p>
+                <p class="c-txt-xs">MARI　RIBU</p>
+              </h2>
+              <div class="p-staff__desc">
+                <p class="c-txt-sm">
+                  我々、rivroundはまず姿勢矯正をして頂きます。反り腰など日本人特有の姿勢を矯正し、痛みの出ないカラダを作りながらトレーニングに入ります。
+                  1度私達と一緒にカラダに目を向けて見ませんか？？
+                </p>
+                <strong class="c-txt-xs">休：毎週火曜日、第一第三月曜日</strong>
+              </div>
+            </div>
+          </div>
+          <div class="view-more appear up">
+            <a class="item" href="/trainers/trainers.html">
+              <span>view more</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- .p-price -->
+      <section id="price" class="p-price">
+        <div class="c-container appear right">
+          <h2 class="p-price__title item">
+            <p class="c-txt-lr">price</p>
+          </h2>
+          <div class="p-price__wrap">
+            <div class="p-price__desc">
+              <p class="c-txt-sm">月8回(週2回目安)のトレーニングです。</p>
+            </div>
+            <dl class="p-price__detail">
+              <dt class="p-price__detail_ttl">
+                体験・見学<span>EXPERIENCE TOUR</span>
+              </dt>
+              <dd class="p-price__detail_cont price-tit">
+                <span class="yen">¥</span>0
+              </dd>
+            </dl>
+            <dl class="p-price__detail">
+              <dt class="p-price__detail_ttl">
+                入会費<span>MEMBERSHIP FEE</span>
+              </dt>
+              <dd class="p-price__detail_cont price-tit">
+                <span class="yen">¥</span>44,000<span class="tax">(税込)</span>
+              </dd>
+            </dl>
+            <dl class="p-price__detail">
+              <dt class="p-price__detail_ttl">
+                月会費<span>MONTHLY FEE</span>
+              </dt>
+              <dd class="p-price__detail_cont price-tit">
+                <span class="yen">¥</span>20,900<span class="tax">(税込)</span>
+              </dd>
+            </dl>
+            <div class="more-btn">
+              <a
+                href="/business/business.html"
+                class="more-btn__link slide-bg animsition-link"
+              >
+                <span class="c-txt-sm">無料体験・見学</span>
+                <span class="bg"></span
+              ></a>
+            </div>
+          </div>
+          <div class="p-price__img-wrap appear up">
+            <div class="p-price__img left">
+              <img
+                class="parallax-down"
+                src="/images/home/shoulder_1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="p-price__img rellax right">
+              <img class="gallery-img" src="/images/home/run_1.jpg" alt="" />
             </div>
           </div>
         </div>
-        <div class="view-more appear up">
-          <a class="item" href="/trainers/trainers.html">
-            <span>view more</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- .p-price -->
-    <section id="price" class="p-price">
-      <div class="c-container">
-        <h2 class="p-price__title clip-js left">
-          <p class="c-txt-lr">price</p>
-        </h2>
-        <div class="p-price__wrap">
-          <div class="p-price__desc">
-            <p class="c-txt-sm">月8回(週2回目安)のトレーニングです。</p>
+      </section>
+      <!-- .p-recruite -->
+      <section id="recruite" class="p-recruite">
+        <div class="c-container appear right">
+          <h2 class="p-recruite__title item">
+            <p class="c-txt-lr">recruite</p>
+          </h2>
+          <h3 class="p-recruite__subtitle item">スタッフ募集</h3>
+          <div class="p-recruite__desc item">
+            <p class="c-txt-sm">
+              現在RivRoundではスタッフを募集しています。<br />
+              採用ご希望の方は、以下のリンクから詳細をご確認いただき、お気軽にお問い合わせください。
+            </p>
           </div>
-          <dl class="p-price__detail">
-            <dt class="p-price__detail_ttl">
-              体験・見学<span>EXPERIENCE TOUR</span>
-            </dt>
-            <dd class="p-price__detail_cont price-tit">
-              <span class="yen">¥</span>0
-            </dd>
-          </dl>
-          <dl class="p-price__detail">
-            <dt class="p-price__detail_ttl">
-              入会費<span>MEMBERSHIP FEE</span>
-            </dt>
-            <dd class="p-price__detail_cont price-tit">
-              <span class="yen">¥</span>44,000<span class="tax">(税込)</span>
-            </dd>
-          </dl>
-          <dl class="p-price__detail">
-            <dt class="p-price__detail_ttl">
-              月会費<span>MONTHLY FEE</span>
-            </dt>
-            <dd class="p-price__detail_cont price-tit">
-              <span class="yen">¥</span>20,900<span class="tax">(税込)</span>
-            </dd>
-          </dl>
-          <div class="more-btn">
-            <a href="/business/business.html" class="more-btn__link slide-bg animsition-link">
-              <span class="c-txt-sm">無料体験・見学</span>
-              <span class="bg"></span></a>
-          </div>
-        </div>
-        <div class="p-price__img-wrap appear up">
-          <div class="p-price__img left">
-            <img class="parallax-down" src="/images/home/shoulder_1.jpg" alt="" />
-          </div>
-          <div class="p-price__img rellax right">
-            <img class="gallery-img" src="/images/home/run_1.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- .p-recruite -->
-    <section id="recruite" class="p-recruite">
-      <div class="c-container appear up">
-        <h2 class="p-recruite__title clip-js left">
-          <p class="c-txt-lr">recruite</p>
-        </h2>
-        <h3 class="p-recruite__subtitle item">スタッフ募集</h3>
-        <div class="p-recruite__desc item">
-          <p class="c-txt-sm">
-            現在RivRoundではスタッフを募集しています。<br />
-            採用ご希望の方は、以下のリンクから詳細をご確認いただき、お気軽にお問い合わせください。
-          </p>
-        </div>
-        <div class="view-more item">
-          <a href="/recruite/recruite.html">
-            <span>view more</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- .p-access -->
-    <section id="access" class="p-access">
-      <div class="c-container">
-        <h2 class="p-access__title clip-js left">
-          <p class="c-txt-lr">access</p>
-        </h2>
-        <div class="p-access__desc appear up">
-          <ul class="p-access__list item">
-            <li class="p-access__item">
-              <p class="c-txt-sm">〒812-0011</p>
-              <p class="c-txt-sm">
-                福岡県福岡市博多区博多駅前3-27-25,第二岡部ビル9F
-              </p>
-            </li>
-            <li class="p-access__item">
-              <p class="c-txt-sm">
-                <a href="tel:092-686-7954">TEL:092-686-7954</a>
-              </p>
-              <p class="c-txt-sm">
-                <a href="mailto:info@riv-round.com">info@riv-round.com</a>
-              </p>
-            </li>
-            <li class="p-access__item">
-              <p class="c-txt-sm">月~金 10:00~21:00</p>
-              <p class="c-txt-sm">土~日 9:00~20:00</p>
-            </li>
-            <li class="p-access__item">
-              <p class="c-txt-xs">駐車場あり（店舗前３台）</p>
-            </li>
-          </ul>
-          <div class="p-access__g-map item">
-            <a target="_blank" href="https://goo.gl/maps/j8XVKnaPfmCbvFsb6"><span class="c-txt-sm">google map</span></a>
-          </div>
-        </div>
-        <div class="p-access__img item">
-          <img src="/images/home/top_3@pc.jpg" alt="" class="p-access__photo parallax" />
-        </div>
-      </div>
-    </section>
-    <!-- .p-news -->
-    <section id="news" class="p-news">
-      <div class="c-container">
-        <h2 class="p-news__tit c-title">
-          <p class="c-txt-lr clip-js left">NEWS</p>
-        </h2>
-        <div class="p-news__wrapper appear up">
-          <ul class="p-news__list item">
-            <li class="p-news__item">
-              <a class="p-news__link" href="">
-                <span>2021/05/25</span>
-                <p>営業時間短縮営業について</p>
-              </a>
-            </li>
-            <li class="p-news__item">
-              <a class="p-news__link" href="">
-                <span>2021/05/25</span>
-                <p>新型コロナウィルス感染拡大について</p>
-              </a>
-            </li>
-            <li class="p-news__item">
-              <a class="p-news__link" href="">
-                <span>2021/05/25</span>
-                <p>ホームページリニューアル致しました</p>
-              </a>
-            </li>
-          </ul>
           <div class="view-more item">
-            <a class="view-more__link animsition-link" href="/news/news.html">
-              <span>NEWS LIST</span></a>
+            <a href="/recruite/recruite.html">
+              <span>view more</span>
+            </a>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- .p-footer -->
-    <footer class="p-footer">
-      <div class="c-container">
-        <div class="p-footer__wrap">
-          <div class="p-footer__logo">
-            <img src="/images/common/riv_logo_official2.png" alt="" />
+      </section>
+      <!-- .p-access -->
+      <section id="access" class="p-access">
+        <div class="c-container appear right">
+          <h2 class="p-access__title item">
+            <p class="c-txt-lr">access</p>
+          </h2>
+          <div class="p-access__desc appear up">
+            <ul class="p-access__list item">
+              <li class="p-access__item">
+                <p class="c-txt-sm">〒812-0011</p>
+                <p class="c-txt-sm">
+                  福岡県福岡市博多区博多駅前3-27-25,第二岡部ビル9F
+                </p>
+              </li>
+              <li class="p-access__item">
+                <p class="c-txt-sm">
+                  <a href="tel:092-686-7954">TEL:092-686-7954</a>
+                </p>
+                <p class="c-txt-sm">
+                  <a href="mailto:info@riv-round.com">info@riv-round.com</a>
+                </p>
+              </li>
+              <li class="p-access__item">
+                <p class="c-txt-sm">月~金 10:00~21:00</p>
+                <p class="c-txt-sm">土~日 9:00~20:00</p>
+              </li>
+              <li class="p-access__item">
+                <p class="c-txt-xs">駐車場あり（店舗前３台）</p>
+              </li>
+            </ul>
+            <div class="p-access__g-map item">
+              <a target="_blank" href="https://goo.gl/maps/j8XVKnaPfmCbvFsb6"
+                ><span class="c-txt-sm">google map</span></a
+              >
+            </div>
           </div>
-          <div class="p-footer__nav">
-            <ul>
-              <li>
-                <a class="animsition-link" href="/"><span class="c-txt-sm">ホーム</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/about/about.html"><span class="c-txt-sm">RivRoundについて</span>
+          <div class="p-access__img item">
+            <img
+              src="/images/home/top_3@pc.jpg"
+              alt=""
+              class="p-access__photo parallax"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- .p-news -->
+      <section id="news" class="p-news">
+        <div class="c-container appear right">
+          <h2 class="p-news__tit c-title item">
+            <p class="c-txt-lr">NEWS</p>
+          </h2>
+          <div class="p-news__wrapper appear up">
+            <ul class="p-news__list item">
+              <li class="p-news__item">
+                <a class="p-news__link" href="">
+                  <span>2021/05/25</span>
+                  <p>営業時間短縮営業について</p>
                 </a>
               </li>
-              <li>
-                <a class="animsition-link" href="/method/method.html"><span class="c-txt-sm">トレーニングメソッド</span>
+              <li class="p-news__item">
+                <a class="p-news__link" href="">
+                  <span>2021/05/25</span>
+                  <p>新型コロナウィルス感染拡大について</p>
                 </a>
               </li>
-              <li>
-                <a class="animsition-link" href="trainers/trainers.html"><span class="c-txt-sm">トレーナー紹介</span>
-                </a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/recruite/recruite.html"><span class="c-txt-sm">採用情報</span>
-                </a>
-              </li>
-              <li>
-                <a href="/news/news.html"><span class="animsition-link c-txt-sm">お知らせ</span>
+              <li class="p-news__item">
+                <a class="p-news__link" href="">
+                  <span>2021/05/25</span>
+                  <p>ホームページリニューアル致しました</p>
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="copyright">&copy;2021 RivRound</div>
-      </div>
-    </footer>
-    <!-- .mobile-menu -->
-    <div class="mobile-menu">
-      <nav class="mobile-menu__nav">
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="/">ホーム</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="/about/about.html">RivRoundについて</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="method/method.html">トレーニングメソッド
-            </a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="/trainers/trainers.html">トレーナー紹介</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="/recruite/recruite.html">採用情報</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">お知らせ</a>
-          </li>
-        </ul>
-        <div class="reserve-btn-wrap">
-          <div class="reserve-btn-tel">
-            <h4>電話予約はこちら</h4>
-            <div class="reserve-btn">
-              <a href="tel:092-686-7954"><span>092-686-7954</span></a>
+            <div class="view-more item">
+              <a class="view-more__link animsition-link" href="/news/news.html">
+                <span>NEWS LIST</span></a
+              >
             </div>
           </div>
-          <div class="reserve-btn-net">
-            <h4>ネット予約はこちら</h4>
-            <div class="reserve-btn">
-              <a href="https://beauty.hotpepper.jp/" target="_blank"><span>ONLINE RESERVE</span></a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <!-- layer_board_area -->
-    <div class="corona" id="layer_board_area">
-      <div class="layer_board_bg"></div>
-      <section class="layer_board">
-        <h2 class="layer_borad_title">新型コロナウィルス感染対策としての取り組み</h2>
-        <div class="layer_borad_content">
-          <p class="desc">RivGymでは「新型コロナウイルス」等の感染症予防対策として、下記の取り組みを実施しております。</p>
-          <ul class="popup_list1">
-            <li>＜スタッフのマスク着用義務つけ＞</li>
-            <li>＜スタッフの手指消毒徹底とお客様への手指消毒奨励＞</li>
-            <li>＜定期的な店内換気と消毒液による清掃での店内環境維持＞</li>
-            <li>＜スタッフ・お客様の検温による健康管理＞</li>
-            <li>＜社会的距離維持のための各施設の利用状況によるご利用人数制限＞</li>
-            <li>＜施設・設備利用後のツール消毒徹底＞</li>
-          </ul>
-          <p class="guideline_link-bf">
-            詳細は、下記資料に詳しく掲載しております。
-          </p>
-          <p class="guideline_link">
-            <a target="_blank" href="#">新型コロナウィルスガイドライン</a>
-          </p>
-          <p>今後も、お客様に安心安全なサービスが提供できる様、誠心誠意努めて参ります。<br>ご理解ご協力のほどお願い申し上げます。</p>
-          <a class="mdl_btn_close square_btn" href="#">閉じる</a>
-          <div class="mdl_btn_close circle_btn"></div>
         </div>
       </section>
+      <!-- .p-footer -->
+      <footer class="p-footer">
+        <div class="c-container">
+          <div class="p-footer__wrap">
+            <div class="p-footer__logo">
+              <img src="/images/common/riv_logo_official2.png" alt="" />
+            </div>
+            <div class="p-footer__nav">
+              <ul>
+                <li>
+                  <a class="animsition-link" href="/"
+                    ><span class="c-txt-sm">ホーム</span></a
+                  >
+                </li>
+                <li>
+                  <a class="animsition-link" href="/about/about.html"
+                    ><span class="c-txt-sm">RivRoundについて</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="animsition-link" href="/method/method.html"
+                    ><span class="c-txt-sm">トレーニングメソッド</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="animsition-link" href="trainers/trainers.html"
+                    ><span class="c-txt-sm">トレーナー紹介</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="animsition-link" href="/recruite/recruite.html"
+                    ><span class="c-txt-sm">採用情報</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/news/news.html"
+                    ><span class="animsition-link c-txt-sm">お知らせ</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">&copy;2021 RivRound</div>
+        </div>
+      </footer>
+      <!-- .mobile-menu -->
+      <div class="mobile-menu">
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="animsition-link" href="/">ホーム</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="animsition-link" href="/about/about.html"
+                >RivRoundについて</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="animsition-link" href="method/method.html"
+                >トレーニングメソッド
+              </a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="animsition-link" href="/trainers/trainers.html"
+                >トレーナー紹介</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="animsition-link" href="/recruite/recruite.html"
+                >採用情報</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="animsition-link" href="/news/news.html">お知らせ</a>
+            </li>
+          </ul>
+          <div class="reserve-btn-wrap">
+            <div class="reserve-btn-tel">
+              <h4>電話予約はこちら</h4>
+              <div class="reserve-btn">
+                <a href="tel:092-686-7954"><span>092-686-7954</span></a>
+              </div>
+            </div>
+            <div class="reserve-btn-net">
+              <h4>ネット予約はこちら</h4>
+              <div class="reserve-btn">
+                <a href="https://beauty.hotpepper.jp/" target="_blank"
+                  ><span>ONLINE RESERVE</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- layer_board_area -->
+      <div class="corona" id="layer_board_area">
+        <div class="layer_board_bg"></div>
+        <section class="layer_board">
+          <h2 class="layer_borad_title">
+            新型コロナウィルス感染対策としての取り組み
+          </h2>
+          <div class="layer_borad_content">
+            <p class="desc">
+              RivGymでは「新型コロナウイルス」等の感染症予防対策として、下記の取り組みを実施しております。
+            </p>
+            <ul class="popup_list1">
+              <li>＜スタッフのマスク着用義務つけ＞</li>
+              <li>＜スタッフの手指消毒徹底とお客様への手指消毒奨励＞</li>
+              <li>＜定期的な店内換気と消毒液による清掃での店内環境維持＞</li>
+              <li>＜スタッフ・お客様の検温による健康管理＞</li>
+              <li>
+                ＜社会的距離維持のための各施設の利用状況によるご利用人数制限＞
+              </li>
+              <li>＜施設・設備利用後のツール消毒徹底＞</li>
+            </ul>
+            <p class="guideline_link-bf">
+              詳細は、下記資料に詳しく掲載しております。
+            </p>
+            <p class="guideline_link">
+              <a target="_blank" href="#">新型コロナウィルスガイドライン</a>
+            </p>
+            <p>
+              今後も、お客様に安心安全なサービスが提供できる様、誠心誠意努めて参ります。<br />ご理解ご協力のほどお願い申し上げます。
+            </p>
+            <a class="mdl_btn_close square_btn" href="#">閉じる</a>
+            <div class="mdl_btn_close circle_btn"></div>
+          </div>
+        </section>
+      </div>
     </div>
-
-  </div>
-  <!-- /.superwrapper -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <!-- jquery.cookie.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js">
-  </script>
-  <script src="/scripts/libs/jquery-modalLayerBoard.js">
-  </script>
-  <script src="scripts/vendor/animsition.min.js"></script>
-  <script src="scripts/libs/page.js"></script>
-  <script src="/scripts/vendor/swiper.min.js"></script>
-  <script src="/scripts/vendor/simpleParallax.min.js"></script>
-  <script src="/scripts/libs/parallax.js"></script>
-  <script src="/scripts/libs/hero-slider.js"></script>
-  <script src="/scripts/libs/reserve-btn.js"></script>
-  <script src="/scripts/libs//mobile-menu.js"></script>
-  <script src="/scripts/libs/scroll.js"></script>
-  <script src="/scripts/libs/text-animation.js"></script>
-  <script src="/scripts/main.js"></script>
-</body>
-
+    <!-- /.superwrapper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- jquery.cookie.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script src="/scripts/libs/jquery-modalLayerBoard.js"></script>
+    <script src="scripts/vendor/animsition.min.js"></script>
+    <script src="scripts/libs/page.js"></script>
+    <script src="/scripts/vendor/swiper.min.js"></script>
+    <script src="/scripts/vendor/simpleParallax.min.js"></script>
+    <script src="/scripts/libs/parallax.js"></script>
+    <script src="/scripts/libs/hero-slider.js"></script>
+    <script src="/scripts/libs/reserve-btn.js"></script>
+    <script src="/scripts/libs//mobile-menu.js"></script>
+    <script src="/scripts/libs/scroll.js"></script>
+    <script src="/scripts/libs/text-animation.js"></script>
+    <script src="/scripts/main.js"></script>
+  </body>
 </html>
